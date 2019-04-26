@@ -17,13 +17,12 @@ tar -xvzf cmake.tar.gz
 cd cmake-3.1.1
 ./bootstrap
 make
+
 cd $BUILD_PATH
-wget https://github.com/glennrp/libpng/archive/v1.2.59.tar.gz
-tar -xvzf v1.2.59.tar.gz 
-cd libpng-1.2.59.tar/
-tar -xvzf libpng-1.2.59.tar
+curl https://github.com/glennrp/libpng/archive/v1.2.59.tar.gz -o v1.2.59.tar.gz
+tar -xvzf v1.2.59.tar.gz
 cd libpng-1.2.59/libpng-1.2.59/
-./configure --prefix=/usr/local
+./configure 
 make
 make install
 
