@@ -19,9 +19,9 @@ cd cmake-3.1.1
 make
 cd $BUILD_PATH
 wget https://github.com/glennrp/libpng/archive/v1.2.59.tar.gz
-tar -xvfz v1.2.59.tar.gz 
+tar -xvzf v1.2.59.tar.gz 
 cd libpng-1.2.59.tar/
-tar -xvfz libpng-1.2.59.tar
+tar -xvzf libpng-1.2.59.tar
 cd libpng-1.2.59/libpng-1.2.59/
 ./configure --prefix=/usr/local
 make
