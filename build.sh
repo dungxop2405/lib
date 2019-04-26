@@ -8,6 +8,13 @@ export OUT_PATH=/app/vendor/opencv
 export PKG_CONFIG_PATH=$OUT_PATH/lib/pkgconfig:$PKG_CONFIG_PATH
 export PATH=$OUT_PATH/bin:$PATH
 
+wget https://github.com/glennrp/libpng/archive/v1.2.59.tar.gz
+tar xvfz v1.2.59.tar.gz 
+cd libpng-1.2.59/
+./configure
+make check
+make install
+
 rm -Rf $OUT_PATH
 
 cd $BUILD_PATH
